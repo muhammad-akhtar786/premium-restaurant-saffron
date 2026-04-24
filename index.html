@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron Flame | Luxury Restaurant Ordering Experience</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-shell">
+  <nav class="premium-nav navbar navbar-expand-lg" id="mainNavbar">
+    <div class="container nav-shell">
+      <a class="brand-wrap" href="index.html" aria-label="Saffron Flame home">
+        <span class="brand-mark">SF</span>
+        <span class="brand-copy">
+          <span>Saffron Flame</span>
+          <small>Luxury Grill House</small>
+        </span>
+      </a>
+
+      <button class="navbar-toggler premium-nav-toggle border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="custom-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse premium-nav-panel" id="navbarNav">
+        <ul class="premium-nav-links navbar-nav mx-auto">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+        <div class="premium-nav-actions">
+          <button type="button" class="language-toggle" aria-label="Language toggle preview: English and Arabic" title="Arabic version coming soon">
+            <span>EN</span>
+            <span>عربي</span>
+          </button>
+          <a href="cart.html" class="nav-cart-link" aria-label="View cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount" data-cart-count>0</span>
+          </a>
+          <a href="menu.html" class="nav-cta-btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="premium-hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy reveal-up">
+            <span class="section-kicker">Cinematic Dining Experience</span>
+            <h1 class="hero-title-xl">
+              Fire-cooked favorites with
+              <em>warm service,</em> bold flavor, and a table-worthy finish at home.
+            </h1>
+            <p class="hero-lead">
+              From lunch platters to late-night desserts, Saffron Flame brings charcoal grills, fresh ingredients, and polished hospitality together in one welcoming experience.
+            </p>
+
+            <div class="hero-trust-row" aria-label="Restaurant trust signals">
+              <span class="halal-badge halal-badge-large">
+                <i class="fa-solid fa-moon"></i>
+                100% Halal Certified
+              </span>
+              <span class="cultural-badge">
+                <i class="fa-solid fa-star-and-crescent"></i>
+                Open late for Iftar and Suhoor
+              </span>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="menu.html" class="btn-primary-lux">Explore Menu</a>
+              <a href="https://wa.me/966557821940?text=Hello%20Saffron%20Flame,%20I%20want%20to%20place%20an%20order." target="_blank" rel="noreferrer" class="btn-outline-luxury">
+                <i class="fa-brands fa-whatsapp"></i>
+                Order on WhatsApp
+              </a>
+            </div>
+
+            <div class="hero-proof">
+              <div class="hero-proof-avatars">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Guest portrait" />
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Guest portrait" />
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=120&q=80" alt="Guest portrait" />
+              </div>
+              <div class="hero-proof-copy">
+                <strong>4.9 average guest rating</strong>
+                <span>Trusted for warm service, generous portions, and carefully packed delivery.</span>
+              </div>
+            </div>
+
+            <div class="hero-quick-metrics">
+              <div class="metric-card">
+                <strong>18+</strong>
+                <span>Years shaping premium casual dining.</span>
+              </div>
+              <div class="metric-card">
+                <strong>12m</strong>
+                <span>Average order confirmation time.</span>
+              </div>
+              <div class="metric-card">
+                <strong>50+</strong>
+                <span>Chef-crafted dishes across grill, pizza, and dessert.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-scene reveal-up delay-1">
+            <div class="hero-stage" data-tilt>
+              <div class="hero-image-panel">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Signature flame-grilled platter" />
+                <div class="hero-image-copy">
+                  <span>Tonight's Highlight</span>
+                  <strong>Smoked Saffron Platter</strong>
+                  <p>Slow-charred meats, saffron rice, fire-roasted vegetables, and signature sauces.</p>
+                </div>
+              </div>
+
+              <div class="hero-secondary-panel">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80" alt="Luxury burger close-up" />
+              </div>
+
+              <div class="hero-stats-grid">
+                <div class="metric-card">
+                  <strong>10K+</strong>
+                  <span>Loyal guests served across dine-in and direct delivery.</span>
+                </div>
+                <div class="metric-card">
+                  <strong>24</strong>
+                  <span>Premium seat lounge with chef counter ambiance.</span>
+                </div>
+                <div class="metric-card">
+                  <strong>6</strong>
+                  <span>Signature categories optimized for modern ordering.</span>
+                </div>
+                <div class="metric-card">
+                  <strong>20%</strong>
+                  <span>First-order offer for new Saffron Flame guests.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-float-card hero-float-rating">
+              <i class="fa-solid fa-star"></i>
+              <div>
+                <strong>Guest Favorite</strong>
+                <span>Elegant food, consistent quality, premium atmosphere.</span>
+              </div>
+            </div>
+
+            <div class="hero-float-card hero-float-offer">
+              <i class="fa-solid fa-sparkles"></i>
+              <div>
+                <strong>Direct Site Offer</strong>
+                <span>Unlock first-order savings without third-party markup.</span>
+              </div>
+            </div>
+
+            <div class="hero-float-card hero-float-delivery">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div>
+                <strong>Fast Confirmation</strong>
+                <span>Direct WhatsApp support for timing, notes, and special requests.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-cue">
+          <span>Scroll to discover the brand</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="luxury-strip">
+      <div class="container">
+        <div class="luxury-strip-track">
+          <span>Fresh charcoal grills</span>
+          <span>Stone-baked pizza</span>
+          <span>Halal friendly menu</span>
+          <span>Ramadan specials available</span>
+          <span>Direct WhatsApp orders</span>
+          <span>Open late daily</span>
+          <span>Family platters</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding" id="experience">
+      <div class="container">
+        <div class="section-head-center reveal-up">
+          <span class="section-kicker">Why Guests Return</span>
+          <h2 class="section-title-main">Big flavor, warm service, and an easier way to order direct.</h2>
+          <p class="section-copy mx-auto">
+            Everything is built around what guests care about most: standout dishes, clear prices, quick checkout, and a comfortable restaurant feel.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <article class="tilt-card reveal-up" data-tilt>
+              <div class="tilt-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h4>Open-Flame Favorites</h4>
+              <p>Char-grilled meats, saffron rice, and bold sauces anchor the menu from lunch to late night.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="tilt-card reveal-up delay-1" data-tilt>
+              <div class="tilt-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <h4>Fresh Daily Prep</h4>
+              <p>Burgers, pizza, grills, and desserts are prepared to look good, taste rich, and travel well.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="tilt-card reveal-up delay-2" data-tilt>
+              <div class="tilt-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <h4>Quick Direct Ordering</h4>
+              <p>Search the menu, adjust quantities, and send the order without extra steps or third-party friction.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="tilt-card reveal-up delay-3" data-tilt>
+              <div class="tilt-icon"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Late-Night Friendly</h4>
+              <p>A clear mobile flow helps guests order quickly when they are hungry, busy, and ready to check out.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature-showcase section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="signature-visual reveal-up">
+              <div class="signature-frame signature-frame-main">
+                <img src="https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=1200&q=80" alt="Crispy chicken burger presentation" loading="lazy" />
+              </div>
+              <div class="signature-frame signature-frame-small">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80" alt="Stone baked pizza" loading="lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="signature-copy reveal-up delay-1">
+              <span class="section-kicker">Signature Storytelling</span>
+              <h2 class="section-title-main">From burgers to pizza, every category is built to satisfy a different craving.</h2>
+              <p>
+                The menu moves from smoky grills and stacked burgers to stone-baked pizza, chilled drinks, and warm desserts for a full meal in one order.
+              </p>
+
+              <div class="signature-points">
+                <div class="signature-point">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Charcoal grills and platters for sharing with friends and family.</span>
+                </div>
+                <div class="signature-point">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Comfort classics with premium touches, sauces, and saffron accents.</span>
+                </div>
+                <div class="signature-point">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Desserts and drinks that round out the meal without slowing checkout.</span>
+                </div>
+              </div>
+
+              <a href="about.html" class="btn-outline-lux">Read Our Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-grid section-padding">
+      <div class="container">
+        <div class="section-head-split reveal-up">
+          <div>
+            <span class="section-kicker">Chef Picks</span>
+            <h2 class="section-title-main">Featured dishes that bring the Saffron Flame experience home.</h2>
+          </div>
+          <a href="menu.html" class="btn-link-lux">
+            View Full Menu
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <article class="premium-food-card reveal-up" data-tilt>
+              <div class="premium-food-media">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80" alt="Truffle Angus Burger" loading="lazy" />
+                <span class="food-tag">Best Seller</span>
+                <span class="halal-badge food-halal-badge">Halal</span>
+              </div>
+              <div class="premium-food-body">
+                <div class="premium-food-head">
+                  <h4>Truffle Angus Burger</h4>
+                  <span>$18</span>
+                </div>
+                <p>Char-grilled beef, onion jam, cheddar, truffle aioli, and a glossy brioche finish.</p>
+                <div class="premium-food-foot">
+                  <span><i class="fa-solid fa-star"></i>4.9 guest rating</span>
+                  <button class="card-action-btn add-to-cart-btn" data-id="101" data-name="Truffle Angus Burger" data-price="18" data-image="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <article class="premium-food-card reveal-up delay-1" data-tilt>
+              <div class="premium-food-media">
+                <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=1200&q=80" alt="Black Truffle Burrata Pizza" loading="lazy" />
+                <span class="food-tag">Luxury Pick</span>
+                <span class="halal-badge food-halal-badge">Halal</span>
+              </div>
+              <div class="premium-food-body">
+                <div class="premium-food-head">
+                  <h4>Black Truffle Burrata Pizza</h4>
+                  <span>$24</span>
+                </div>
+                <p>Stone-baked crust finished with burrata, truffle oil, and roasted mushroom depth.</p>
+                <div class="premium-food-foot">
+                  <span><i class="fa-solid fa-star"></i>4.9 premium selection</span>
+                  <button class="card-action-btn add-to-cart-btn" data-id="104" data-name="Black Truffle Burrata Pizza" data-price="24" data-image="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=1200&q=80">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <article class="premium-food-card reveal-up delay-2" data-tilt>
+              <div class="premium-food-media">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Smoked Saffron Platter" loading="lazy" />
+                <span class="food-tag">Chef Choice</span>
+                <span class="halal-badge food-halal-badge">Halal</span>
+              </div>
+              <div class="premium-food-body">
+                <div class="premium-food-head">
+                  <h4>Smoked Saffron Platter</h4>
+                  <span>$29</span>
+                </div>
+                <p>Mixed grill centerpiece with saffron rice, roasted vegetables, and signature sauce service.</p>
+                <div class="premium-food-foot">
+                  <span><i class="fa-solid fa-star"></i>5.0 signature grill</span>
+                  <button class="card-action-btn add-to-cart-btn" data-id="105" data-name="Smoked Saffron Platter" data-price="29" data-image="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <article class="premium-food-card reveal-up delay-3" data-tilt>
+              <div class="premium-food-media">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=80" alt="Molten Date Cake" loading="lazy" />
+                <span class="food-tag">Sweet Finale</span>
+                <span class="halal-badge food-halal-badge">Halal</span>
+              </div>
+              <div class="premium-food-body">
+                <div class="premium-food-head">
+                  <h4>Molten Date Cake</h4>
+                  <span>$11</span>
+                </div>
+                <p>Warm date sponge, caramel center, vanilla cream, and pistachio dust for a luxury finish.</p>
+                <div class="premium-food-foot">
+                  <span><i class="fa-solid fa-star"></i>4.8 dessert favorite</span>
+                  <button class="card-action-btn add-to-cart-btn" data-id="109" data-name="Molten Date Cake" data-price="11" data-image="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=80">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-story section-padding">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <div class="story-image-stack reveal-up">
+              <div class="story-image-main">
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=80" alt="Restaurant interior lounge" loading="lazy" />
+              </div>
+              <div class="story-image-secondary">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" alt="Restaurant dining atmosphere" loading="lazy" />
+              </div>
+              <div class="story-badge-card">
+                <span>Atmosphere & Service</span>
+                <strong>Luxury hospitality, delivered beautifully.</strong>
+                <p>Warm lighting, attentive service, and a menu made for lingering dinners and quick direct orders.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="story-copy reveal-up delay-1">
+              <span class="section-kicker">Business Story</span>
+              <h2 class="section-title-main">Every visit should feel warm, flavorful, and easy from the first click to the last bite.</h2>
+              <p>
+                Saffron Flame pairs bold fire cooking with calm, attentive service so guests can enjoy the same sense of care online and in the dining room.
+              </p>
+              <p>
+                Whether it is a family platter, a late-night burger, or a WhatsApp order on the go, the experience stays clear and dependable.
+              </p>
+
+              <div class="story-feature-list">
+                <div class="story-feature">
+                  <i class="fa-solid fa-leaf"></i>
+                  <div>
+                    <h5>Premium Ingredients</h5>
+                    <p>Fresh proteins, fragrant rice, herbs, and signature sauces shape the menu from top to bottom.</p>
+                  </div>
+                </div>
+                <div class="story-feature">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <div>
+                    <h5>Fast Direct Ordering</h5>
+                    <p>Cart memory, clear pricing, and WhatsApp support make the final step simple on mobile.</p>
+                  </div>
+                </div>
+                <div class="story-feature">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <div>
+                    <h5>One Menu For Every Occasion</h5>
+                    <p>Lunch, dinner, family sharing, and late-night cravings all sit in one easy ordering flow.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="about.html" class="btn-outline-lux">Meet the Brand</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-banner section-padding-sm" id="offers">
+      <div class="container">
+        <div class="offer-panel reveal-up">
+          <div class="offer-content">
+            <div>
+              <span class="offer-badge">
+                <i class="fa-solid fa-gift"></i>
+                Direct Guest Offer
+              </span>
+              <h2 class="section-title-main">Get 20% off your first Saffron Flame order.</h2>
+              <p>
+                Order straight from the restaurant, enjoy clear pricing, and ask for Ramadan specials, family platters, or delivery timing through WhatsApp.
+              </p>
+              <div class="offer-points" aria-label="Offer highlights">
+                <span><i class="fa-solid fa-circle-check"></i> Halal friendly menu</span>
+                <span><i class="fa-solid fa-circle-check"></i> Iftar and Suhoor friendly</span>
+                <span><i class="fa-solid fa-circle-check"></i> Direct confirmation</span>
+              </div>
+            </div>
+            <div class="offer-action">
+              <a href="menu.html" class="btn-primary-lux">Claim Offer Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-lux section-padding">
+      <div class="container">
+        <div class="section-head-center reveal-up">
+          <span class="section-kicker">Guest Feedback</span>
+          <h2 class="section-title-main">Guests come back for the flavor, the service, and the easy ordering.</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-4">
+            <article class="quote-card reveal-up" data-tilt>
+              <div class="quote-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                "The food arrived beautifully packed and the ordering process felt incredibly smooth. It finally feels like a premium restaurant online."
+              </p>
+              <div class="quote-user">
+                <h5>Noura Al-Harbi</h5>
+                <span>Riyadh guest</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4">
+            <article class="quote-card reveal-up delay-1" data-tilt>
+              <div class="quote-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                "The family platter was generous, fresh, and right on time. Ordering from the site was simple."
+              </p>
+              <div class="quote-user">
+                <h5>Faris Qureshi</h5>
+                <span>Frequent delivery customer</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 mx-md-auto">
+            <article class="quote-card reveal-up delay-2" data-tilt>
+              <div class="quote-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                "The menu is easier to browse, checkout feels cleaner, and WhatsApp ordering makes the whole process quick without feeling cheap."
+              </p>
+              <div class="quote-user">
+                <h5>Rina Prasetyo</h5>
+                <span>Brand consultant</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-lux section-padding">
+      <div class="container">
+        <div class="section-head-split reveal-up">
+          <div>
+            <span class="section-kicker">Atmosphere & Craft</span>
+            <h2 class="section-title-main">Visual moments that make the restaurant feel memorable before the first order.</h2>
+          </div>
+          <a href="about.html" class="btn-link-lux">
+            Discover the Story
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="gallery-card-lux reveal-up">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Dining room lighting" loading="lazy" />
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="gallery-card-lux reveal-up delay-1">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" alt="Premium plated dish" loading="lazy" />
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 mx-md-auto">
+            <article class="gallery-card-lux reveal-up delay-2">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Chef service moment" loading="lazy" />
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-lux section-padding" id="contact">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="contact-card-lux reveal-up">
+              <span class="section-kicker">Contact & Location</span>
+              <h2 class="section-title-main">Visit us, book a table, or order directly.</h2>
+              <p class="section-copy">
+                Saffron Flame serves premium grill-house dishes in a warm setting and keeps direct ordering quick when you want the same quality at home.
+              </p>
+
+              <div class="contact-list-lux">
+                <div class="contact-item-lux">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <strong>Location</strong>
+                    <span>King Abdullah Financial District, Riyadh, Saudi Arabia</span>
+                  </div>
+                </div>
+                <div class="contact-item-lux">
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <strong>Phone</strong>
+                    <span>+966 55 782 1940</span>
+                  </div>
+                </div>
+                <div class="contact-item-lux">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <span>hello@saffronflame.com</span>
+                  </div>
+                </div>
+                <div class="contact-item-lux">
+                  <i class="fa-regular fa-clock"></i>
+                  <div>
+                    <strong>Hours</strong>
+                    <span>Daily from 12:00 PM to 1:00 AM</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://wa.me/966557821940?text=Hello%20Saffron%20Flame,%20I%20would%20like%20to%20reserve%20or%20place%20an%20order." target="_blank" rel="noreferrer" class="btn-primary-lux">
+                <i class="fa-brands fa-whatsapp"></i>
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="map-card-lux reveal-up delay-1">
+              <div class="map-frame-wrap">
+                <iframe
+                  class="map-embed-lux"
+                  src="https://www.google.com/maps?q=King%20Abdullah%20Financial%20District,%20Riyadh,%20Saudi%20Arabia&z=14&output=embed"
+                  title="Map showing King Abdullah Financial District, Riyadh, Saudi Arabia"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div class="map-note-lux">
+                  <span>Riyadh Location</span>
+                  <h4>King Abdullah Financial District</h4>
+                  <p>Easy to reach for lunch meetings, family dinners, and late-night cravings.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-lux">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a class="brand-wrap" href="index.html">
+              <span class="brand-mark">SF</span>
+              <span class="brand-copy">
+                <span>Saffron Flame</span>
+                <small>Luxury Grill House</small>
+              </span>
+            </a>
+            <p class="footer-tagline">
+              Charcoal grills, stone-baked pizzas, warm service, and quick direct ordering all in one place.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-links">
+            <h5>Navigate</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservations</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="footer-links">
+            <h5>Discover</h5>
+            <ul>
+              <li><a href="#offers">Offers</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="menu.html">Signature Dishes</a></li>
+              <li><a href="admin.html">Admin</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-links">
+            <h5>Follow</h5>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://wa.me/966557821940" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saffron Flame. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="cart.html" class="mobile-checkout-fab" aria-label="Open cart and checkout">
+    <span class="mobile-checkout-icon">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="mobile-fab-count" data-cart-count>0</span>
+    </span>
+    <span class="mobile-checkout-copy">
+      <strong>Checkout</strong>
+      <small>View cart</small>
+    </span>
+  </a>
+
+  <a href="https://wa.me/966557821940?text=Hello%20Saffron%20Flame,%20I%20would%20like%20to%20order%20or%20book%20a%20table." target="_blank" rel="noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="cart-toast" id="cartToast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Item added to cart</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/menu-data.js"></script>
+  <script src="JS/data-store.js"></script>
+  <script type="module" src="JS/firebase.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>

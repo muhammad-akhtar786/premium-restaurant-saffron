@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Saffron Flame</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="inner-page-body">
+  <nav class="premium-nav navbar navbar-expand-lg" id="mainNavbar">
+    <div class="container nav-shell">
+      <a class="brand-wrap" href="index.html" aria-label="Saffron Flame home">
+        <span class="brand-mark">SF</span>
+        <span class="brand-copy">
+          <span>Saffron Flame</span>
+          <small>Luxury Grill House</small>
+        </span>
+      </a>
+
+      <button class="navbar-toggler premium-nav-toggle border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="custom-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse premium-nav-panel" id="navbarNav">
+        <ul class="premium-nav-links navbar-nav mx-auto">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="menu.html">Menu</a></li>
+          <li><a href="index.html#offers">Offers</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+        <div class="premium-nav-actions">
+          <button type="button" class="language-toggle" aria-label="Language toggle preview: English and Arabic" title="Arabic version coming soon">
+            <span>EN</span>
+            <span>عربي</span>
+          </button>
+          <a href="cart.html" class="nav-cart-link" aria-label="View cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount" data-cart-count>0</span>
+          </a>
+          <a href="cart.html" class="nav-cta-btn">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="inner-hero menu-hero">
+      <div class="container">
+        <div class="inner-hero-content reveal-up">
+          <span class="section-kicker">Menu & Quick Order</span>
+          <h1 class="section-title-main">Explore flame-grilled signatures, stacked burgers, stone-baked pizza, and sweet finales.</h1>
+          <p>
+            Build a meal for one, a family spread, or a late-night dessert order with fresh dishes prepared directly by Saffron Flame.
+          </p>
+          <div class="page-hero-badges">
+            <span class="page-chip">Charcoal grills</span>
+            <span class="page-chip">Halal friendly</span>
+            <span class="page-chip">Premium burgers</span>
+            <span class="page-chip">Direct orders</span>
+          </div>
+          <div class="order-flow-strip" aria-label="Order flow">
+            <a href="menu.html" class="order-flow-step is-current" aria-current="page">
+              <strong>1</strong>
+              <span>Browse the menu</span>
+            </a>
+            <a href="cart.html" class="order-flow-step">
+              <strong>2</strong>
+              <span>Review your cart</span>
+            </a>
+            <a href="cart.html#placeOrderBtn" class="order-flow-step">
+              <strong>3</strong>
+              <span>Place the order</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding-sm menu-controls-section">
+      <div class="container">
+        <div class="menu-controls-box surface-panel reveal-up">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="menuSearch" placeholder="Search burgers, pizza, grill, drinks, desserts..." />
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="filter-buttons justify-content-lg-end">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="burgers">Burgers</button>
+                <button class="filter-btn" data-filter="pizza">Pizza</button>
+                <button class="filter-btn" data-filter="bbq">BBQ</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding menu-page-section">
+      <div class="container">
+        <div class="row g-4 menu-layout">
+          <div class="col-lg-8">
+            <div class="row g-4" id="menuGrid">
+              <div class="col-12">
+                <div class="no-results-box">
+                  <i class="fa-solid fa-utensils"></i>
+                  <h4>Loading the menu</h4>
+                  <p>Preparing today&apos;s dishes and availability.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="noMenuResults" class="no-results-box mt-4" hidden>
+              <i class="fa-solid fa-utensils"></i>
+              <h4>No matching dishes found</h4>
+              <p>Try another search term or reset the category filter to explore the full menu.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="sticky-cart-card reveal-up delay-1">
+              <div class="sticky-cart-header">
+                <span class="section-kicker">Your Order</span>
+                <h3 class="section-title-sm">Live Cart Summary</h3>
+                <p>Keep an eye on your selections before heading to checkout.</p>
+              </div>
+
+              <div class="sticky-cart-stats">
+                <div class="summary-stat">
+                  <span>Items</span>
+                  <strong id="miniCartCount" data-mini-cart-count>0</strong>
+                </div>
+                <div class="summary-stat">
+                  <span>Subtotal</span>
+                  <strong id="miniCartSubtotal" data-mini-cart-subtotal>$0.00</strong>
+                </div>
+              </div>
+
+              <div class="cart-summary-points">
+                <div class="cart-summary-point">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Tap checkout anytime from the floating mobile cart button.</span>
+                </div>
+                <div class="cart-summary-point">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Your items stay saved on this device until checkout.</span>
+                </div>
+                <div class="cart-summary-point">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>Need help choosing? Ask us on WhatsApp for quick recommendations.</span>
+                </div>
+              </div>
+
+              <div class="summary-actions">
+                <a href="cart.html" class="btn-primary-lux">Open Checkout</a>
+                <a href="https://wa.me/966557821940?text=Hello%20Saffron%20Flame,%20I%20would%20like%20to%20know%20today%27s%20chef%20recommendations." target="_blank" rel="noreferrer" class="btn-outline-luxury">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  Ask on WhatsApp
+                </a>
+              </div>
+            </aside>
+
+            <aside class="checkout-helper-card reveal-up delay-2">
+              <div class="story-highlight-icon"><i class="fa-solid fa-utensils"></i></div>
+              <h4>Need help choosing the right spread?</h4>
+              <p>
+                Ask the team for family platters, spice levels, sharing portions, or today&apos;s freshest grill recommendations.
+              </p>
+              <div class="helper-point-list">
+                <div class="helper-point">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <span>Chef-led recommendations for mixed grill and family orders.</span>
+                </div>
+                <div class="helper-point">
+                  <i class="fa-solid fa-mobile-screen-button"></i>
+                  <span>Clear portions for solo meals, date nights, and groups.</span>
+                </div>
+                <div class="helper-point">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Direct WhatsApp support for custom platters and timing notes.</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-lux">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a class="brand-wrap" href="index.html">
+              <span class="brand-mark">SF</span>
+              <span class="brand-copy">
+                <span>Saffron Flame</span>
+                <small>Luxury Grill House</small>
+              </span>
+            </a>
+            <p class="footer-tagline">
+              From smoky grills to late-night desserts, Saffron Flame keeps direct ordering simple, fast, and guest-friendly.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-links">
+            <h5>Navigate</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="reservation.html">Reservations</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="footer-links">
+            <h5>Explore</h5>
+            <ul>
+              <li><a href="index.html#offers">Offers</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li><a href="cart.html">Checkout</a></li>
+              <li><a href="admin.html">Admin</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-links">
+            <h5>Follow</h5>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://wa.me/966557821940" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saffron Flame. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="cart.html" class="mobile-checkout-fab" aria-label="Open cart and checkout">
+    <span class="mobile-checkout-icon">
+      <i class="fa-solid fa-bag-shopping"></i>
+      <span class="mobile-fab-count" data-cart-count>0</span>
+    </span>
+    <span class="mobile-checkout-copy">
+      <strong>Checkout</strong>
+      <small>View cart</small>
+    </span>
+  </a>
+
+  <a href="https://wa.me/966557821940?text=Hello%20Saffron%20Flame,%20I%20need%20help%20with%20my%20order." target="_blank" rel="noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <div class="cart-toast" id="cartToast" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Item added to cart</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/menu-data.js"></script>
+  <script src="JS/data-store.js"></script>
+  <script type="module" src="JS/firebase.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>
